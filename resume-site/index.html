@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Roddy Ezell</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script>
+            fetch('https://38l7afqsa7.execute-api.us-east-1.amazonaws.com/Prod/put')
+                .then(() => fetch('https://38l7afqsa7.execute-api.us-east-1.amazonaws.com/Prod/get'))
+                .then(response => response.json())
+                .then((data) => {
+                    document.getElementById('replaceme').innerText = data.count
+                })
+        </script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none"></span>
+                <span class="d-none d-lg-block"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Roddy
+                        <span class="text-primary">Ezell</span>
+                    </h1>
+                    <div class="subheading mb-5">
+                        St. Petersburg, FL ·
+                        ezellroddy@gmail.com
+                        · Visitor count: <span id = "replaceme"></span>
+                    </div>
+                    <p>
+                        
+                    </p>
+
+                    <p class="lead mb-5">Mechanical engineer with 5 years of professional experience in medical device R&D seeking a career change to Software Development. Extensive experience with technical writing, test engineering, and process development.</p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/roddyezell/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/roddyezell"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Experience-->
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Cloud Engineering Project</h3>
+                            <div class="subheading mb-3">www.roddyezell.com</div>
+                            <p>Deployed a static resume site to an Amazon S3 bucket. Configured DNS settings via Route53 to direct traffic to nearest edge location via a CloudFront distribution and secured site with HTTPS certificate.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2023</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">R&D Engineer II</h3>
+                            <div class="subheading mb-3">Conmed</div>
+                            <p>Developed a full-stack ServiceNow application to create and manage requests for two support teams. Worked with stakeholders to define requirements, project scope, and financial justification; designed and implemented the complete solution.</p>
+                            <p>Coordinated testing for all business units, advised teams on test requirements, managed consumable inventory, trained technicians, authorized the release of test results to the design history file.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2021- Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">R&D Engineer I</h3>
+                            <div class="subheading mb-3">Conmed</div>
+                            <p>Used SQL to aggregate documentation to resolve a regulatory gap which risked the continued sales of all products in a $200M portfolio of legacy Class I and II medical devices.</p>
+                            <p>Created an app with PowerApps to capture lessons learned during each project phase.</p>
+                            <p>Served as SME for many projects on ISO 11607-1 and ASTM D4169 test requirements.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">April 2019 - April 2021</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Associate Engineer</h3>
+                            <div class="subheading mb-3">Conmed</div>
+                            <p>Authored hundreds of design verification and validation test protocols and reports to gather evidence and establish product claims for Class I, II, and III medical devices for 510(k) FDA submission.</p>
+                            <p>Designed and constructed an automated test fixture that simultaneously controlled 10 arthroscopic pumps by sending scripted commands via USB; reducing test time by over a month.</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">November 2017 - April 2019</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Education-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Education</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">University of South Florida</h3>
+                            <div class="subheading mb-3">Mechanical Engineering, B.Sc</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2015 - August 2017</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Lake-Sumter State College</h3>
+                            <div class="subheading mb-3">Associate of Arts</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">August 2008 - May 2011</span></div>
+                    </div>
+                </div>
+                
+            </section>
+            <hr class="m-0" />
+            <!-- Skills-->
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Skills</h2>
+                    <div class="subheading mb-3">Programming Languages & Tools</div>
+                    <ul class="list-inline dev-icons">
+                        
+                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
+                        <li class="list-inline-item"><i class="fa-brands fa-python"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
+                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
+                    </ul>
+            </section>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
