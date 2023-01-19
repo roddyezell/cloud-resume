@@ -26,4 +26,4 @@ jobs:
     - name: Test Get Function with pytest
       run: |
         ls -la
-        pytest app.py
+        cd get-function && pytest app.py
