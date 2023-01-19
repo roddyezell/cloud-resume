@@ -23,10 +23,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: jakejarvis/s3-sync-action@master
+      - uses: chetan/invalidate-cloudfront-action@v2
         with:
           args: --delete
         env:
           AWS_S3_BUCKET: www.roddyezell.com
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
           SOURCE_DIR: ./resume-site
