@@ -1,0 +1,24 @@
+name: main
+on: push
+
+jobs:
+  test-infra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.7.x'
+      - name: Install dependencies
+        run:  |
+          python -m pip install --upgrade pip
+          pip install pytest
+          pip install pytest-cov
+      - name: test get-function
+        run: cd cloud-resume/get-function && pytest app.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
+      - name: test put-function
+        run: cd cloud-resume/put-function && pytest app.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html
