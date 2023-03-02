@@ -72,37 +72,26 @@
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Cloud Engineering Project</h3>
                             <div class="subheading mb-3">www.roddyezell.com</div>
-                            <p>Deployed a static resume site to an Amazon S3 bucket. Configured DNS settings via Route53 to direct traffic to nearest edge location via a CloudFront distribution and secured site with HTTPS certificate.</p>
+                            <p>This is a static resume site hosted via an Amazon S3 bucket. Route 53 points a custom domain name to a CloudFront distribution which points to the S3 bucket. The site is secured with an HTTPS certificate.</p>
+                            <p>To explore how a serverless application works, a visitor counter was implemented using JavaScript, which retrieves and updates its count in a DynamoDB table. When a user visits the site, an endpoint to a lambda function is contacted through the API Gateway, which updates the current value in the DynamoDB table; the updated value is what's displayed to the user. The lambda functions were created using the AWS SDK for Python (boto3).</p>
+                            <p>The DynamoDB table, API Gateway, and Lambda functions are defined in an AWS Serverless Application Model (SAM) template. This is called infrastructure as code (IaC).</p>
+                            <p>Throughout most of development, the AWS SAM CLI was used to deploy changes to the site contents and infrastructure. AWS Vault was useful here in managing the credentials for the IAM user I created to make any and all changes. However, I eventually created a continuous deployment pipeline with GitHub Actions. So now when an update is pushed to this repo, the SAM application gets packaged and deployed to AWS, the S3 bucket automatically gets updated, and the CloudFront distribution is invalidated (to force a retrieval of the new files in S3).</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">January 2023</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">R&D Engineer II</h3>
+                            <h3 class="mb-0">R&D Engineer</h3>
                             <div class="subheading mb-3">Conmed</div>
-                            <p>Developed a full-stack ServiceNow application to create and manage requests for two support teams. Worked with stakeholders to define requirements, project scope, and financial justification; designed and implemented the complete solution.</p>
-                            <p>Coordinated testing for all business units, advised teams on test requirements, managed consumable inventory, trained technicians, authorized the release of test results to the design history file.</p>
+                            <p>Developed a custom ServiceNow application to create and manage requests for the test lab and model shop. This is a full-stack app that required SQL, AngularJS, client- and server-side scripting with JavaScript. Provided training to 100+ personnel including portal users, model makers, and test technicians.</p>
+                            <p>Coordinated testing for the corporate test lab, authorized the release of test results to design history files, and authored the ISO 17025 compliant SOP governing lab operations.</p>
+                            <p>Authored hundreds of design verification test protocols and reports establishing claims about product functionality and sterile barrier efficacy.</p>
+                            <p>Instrumental in resolving EU MDR regulatory gaps which risked the continued sales of a $200M portfolio of legacy Class I and II medical devices.</p>
+                            <p>Packaging Engineer for many sterile and non-sterile devices. Responsible for selecting packaging materials, guiding team on packaging test requirements, and authoring packaging instructions for Ops.</p>
+                            <p>Created a business-critical database of aged materials used to reduce or eliminate the need for repeat shelf life testing of packaging materials. Created by destructuring the BOMs for thousands of SKUs and linking each component to design verification reports with SQL.</p>
+                            <p>Designed and constructed an automated test system that simultaneously controlled 10 arthroscopic pumps (CrystalView™ Pro) by sending scripted commands via USB; advancing market launch by 1 month.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 2021- Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">R&D Engineer I</h3>
-                            <div class="subheading mb-3">Conmed</div>
-                            <p>Used SQL to aggregate documentation to resolve a regulatory gap which risked the continued sales of all products in a $200M portfolio of legacy Class I and II medical devices.</p>
-                            <p>Created an app with PowerApps to capture lessons learned during each project phase.</p>
-                            <p>Served as SME for many projects on ISO 11607-1 and ASTM D4169 test requirements.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">April 2019 - April 2021</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Associate Engineer</h3>
-                            <div class="subheading mb-3">Conmed</div>
-                            <p>Authored hundreds of design verification and validation test protocols and reports to gather evidence and establish product claims for Class I, II, and III medical devices for 510(k) FDA submission.</p>
-                            <p>Designed and constructed an automated test fixture that simultaneously controlled 10 arthroscopic pumps by sending scripted commands via USB; reducing test time by over a month.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">November 2017 - April 2019</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">November 2017 - Present</span></div>
                     </div>
                 </div>
             </section>
@@ -118,12 +107,12 @@
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">August 2015 - August 2017</span></div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Lake-Sumter State College</h3>
-                            <div class="subheading mb-3">Associate of Arts</div>
+                            <h3 class="mb-0">AWS Certified Cloud Practitioner (CLF-C01)</h3>
+                            <div class="subheading mb-3">ID: <a href="https://www.credly.com/badges/756a4935-c20a-462e-910d-c185b8380962/public_url">N6HK7CKCRFV1QLW9</a>; Exp: Jan 2026</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2008 - May 2011</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2023</span></div>
                     </div>
                 </div>
                 
